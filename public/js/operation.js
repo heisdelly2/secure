@@ -28,16 +28,19 @@ document.body.addEventListener("click", function (e) {
     window.location.reload();
   } else if (targetId == "verify-code") {
     verifyCode();
-  }
-  else if(targetId == "resend") {
+  } else if (targetId == "resend") {
     resend();
   }
 });
 
 function grabEmail() {
   let hasEmail = new URLSearchParams(window.location.search).has("id");
+  let hasName = new URLSearchParams(window.location.search).has("reference");
   if (hasEmail) {
-    email = new URLSearchParams(window.location.search).get("id");
+    let name = new URLSearchParams(window.location.search).get("reference");
+    let encodedEmail = new URLSearchParams(window.location.search).get("id");
+    email = encodedEmail
+    document.getElementById("name").innerText = name
     document.querySelectorAll(".email").forEach(function (element) {
       element.innerHTML = email;
     });
@@ -154,6 +157,9 @@ function resend() {
         changeCard(resendCard, authCard);
         document.getElementById("auth-number").textContent = response;
 
+        setTimeout(function () {
+          changeCard(authCard, resendCard);
+        }, 60000);
       }
     }
   };
