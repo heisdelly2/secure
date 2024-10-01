@@ -1,0 +1,420 @@
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"),
+    local("Roboto-Light"), local("DroidSans"), local("Tahoma"),
+    local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light");
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#title-bar {
+  height: 31px;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+
+#logo {
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
+#logo-description {
+  font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue",
+    "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi",
+    "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga",
+    "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee",
+    "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic",
+    "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue",
+    "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti",
+    "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+
+  color: white;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+#minimize {
+  color: white;
+  font-size: 16px;
+  padding: 6px 12px 6px 12px;
+}
+
+#square {
+  color: white;
+  font-size: 22px;
+  padding: 0px 14px 5px 14px;
+}
+
+#exit {
+  color: white;
+  font-size: 15px;
+  padding: 7px 14px 7px 14px;
+}
+
+#url-bar {
+  font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue",
+    "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi",
+    "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga",
+    "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee",
+    "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic",
+    "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue",
+    "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti",
+    "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+
+  height: 28px;
+  background-color: #1b1a1a;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: scroll;
+  text-overflow: ellipsis;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#url-bar::-webkit-scrollbar {
+  display: none;
+}
+
+#ssl-padlock {
+  user-select: none;
+  padding-left: 8px;
+  margin-right: 4px;
+}
+
+#domain-name {
+  color: white;
+  font-size: 14px;
+}
+
+#domain-path {
+  color: #9c9898;
+  font-size: 14px;
+}
+
+#title-bar-width {
+  width: calc(100% + 1px); /* 2px added to allow for border on iframe */
+}
+
+#content {
+  width: 500px;
+  height: 500px;
+  border: 1px solid gray;
+}
+
+#window {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-height: 520px; /* title bar height + content height */
+  width: 600px;
+  margin-top: 128px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.scroll {
+  scrollbar-width: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 32px;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+#left-arrow:active {
+  border: 1px solid black;
+}
+
+.progress1,
+.progress2,
+.progress3,
+.progress4,
+.progress5 {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  background-color: #0067b8;
+  border-radius: 50%;
+  z-index: 100;
+  opacity: 0;
+}
+
+.progress1 {
+  animation: progressDot1 2s infinite 0.05s ease; /* Combined animation properties */
+}
+
+.progress2 {
+  animation: progressDot2 2s infinite 0.2s ease; /* Combined animation properties */
+}
+
+.progress3 {
+  animation: progressDot3 2s infinite 0.35s ease; /* Combined animation properties */
+}
+
+.progress4 {
+  animation: progressDot4 2s infinite 0.5s ease; /* Combined animation properties */
+}
+
+.progress5 {
+  animation: progressDot5 2s infinite 0.65s ease; /* Combined animation properties */
+}
+
+@keyframes progressDot1 {
+  0%,
+  20% {
+    left: 0;
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    opacity: 1;
+  }
+  35% {
+    left: 45%;
+    animation-timing-function: linear;
+  }
+  65% {
+    left: 60%;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    opacity: 1;
+  }
+  80%,
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes progressDot2 {
+  0%,
+  20% {
+    left: 0;
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    opacity: 1;
+  }
+  35% {
+    left: 45%;
+    animation-timing-function: linear;
+  }
+  65% {
+    left: 60%;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    opacity: 1;
+  }
+  80%,
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes progressDot3 {
+  0%,
+  20% {
+    left: 0;
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    opacity: 1;
+  }
+  35% {
+    left: 45%;
+    animation-timing-function: linear;
+  }
+  65% {
+    left: 60%;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    opacity: 1;
+  }
+  80%,
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes progressDot4 {
+  0%,
+  20% {
+    left: 0;
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    opacity: 1;
+  }
+  35% {
+    left: 45%;
+    animation-timing-function: linear;
+  }
+  65% {
+    left: 60%;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    opacity: 1;
+  }
+  80%,
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes progressDot5 {
+  0%,
+  20% {
+    left: 0;
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    opacity: 1;
+  }
+  35% {
+    left: 45%;
+    animation-timing-function: linear;
+  }
+  65% {
+    left: 60%;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    opacity: 1;
+  }
+  80%,
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+#body {
+  background: linear-gradient(
+      77.34deg,
+      #d3dcfa -5.81%,
+      rgba(243, 246, 255, 0) 81.57%
+    ),
+    linear-gradient(
+      85.83deg,
+      rgba(243, 246, 255, 0.2) 49.81%,
+      rgba(243, 246, 255, 0) 78.82%
+    ),
+    radial-gradient(
+      55.02% 39.81% at 31.38% 48.82%,
+      rgba(255, 255, 255, 0.7) 0,
+      rgba(245, 248, 254, 0) 92.98%
+    );
+  margin-bottom: -50px;
+  text-align: center;
+  padding: 158px 300px;
+}
+
+#login-btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 8px;
+  background-color: 464FEB;
+  width: 40%;
+  color: white;
+  border-radius: 4px;
+}
+#heading {
+  background: -webkit-linear-gradient(
+    353.8deg,
+    #ed6419 -3.08%,
+    #9629e7 14.74%,
+    #0860c7 72.12%
+  );
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: -webkit-linear-gradient(
+    353.8deg,
+    rgb(237, 100, 25) -3.08%,
+    rgb(150, 41, 231) 14.74%,
+    rgb(8, 96, 199) 72.12%
+  );
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: text;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 24px 0px 8px;
+}
+.element {
+  padding: 44px;
+}
+#close-mobile {
+  display: none;
+}
+#message {
+  font-size: 18px;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  color: rgb(45, 45, 45);
+  line-height: 32px;
+}
+@media only screen and (max-width: 600px) {
+  #body {
+    padding: 64px 0px;
+  }
+  #login-btn {
+    width: 80%;
+  }
+  #heading {
+    font-size: 26px;
+  }
+  #title-bar-width {
+    display: none;
+  }
+  #window {
+    margin-top: 0px;
+    height: 100vh;
+    width: 100%;
+  }
+  .scroll {
+    margin: 0px 0px 0px;
+    box-shadow: none;
+    min-width: 380px;
+  }
+  .element {
+    padding: 0px 32px;
+  }
+  #close-mobile {
+    display: block;
+    text-align: end;
+    padding: 16px 8px 0px;
+  }
+  #message {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
